@@ -41,8 +41,8 @@ summary(ames_model)
 
 
 # Calculating prediction values
-prices_test_predict <- predict(ames_model, newdata = data.frame(prices_test_clean)) 
+prices_test_clean$SalePrice <- predict(ames_model, newdata = data.frame(prices_test_clean)) 
 
 
 # Writing to file
-write.csv(test.imp$ximp[,c("PassengerId","Survived")], file = "np2hf_submissions.csv", row.names=FALSE)
+write.csv(prices_test_clean[,c("Id","SalePrice")], file = "ames_submissions.csv", row.names=FALSE)
