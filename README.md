@@ -4,7 +4,7 @@ This is Group "competition1-5"'s repository for the competition house prices.
 Our Kaggle team name is "competition1-5". And our best score acheived was 0.15585.
 
 # Team roles:
-Kia Duan: Github coordinator; Responsible partly for parametric model building and cross-validation
+Kia Duan: Github coordinator; Responsible partly for parametric model building
 
 JB Park: Responsible for data exploration
 
