@@ -264,3 +264,8 @@ mypreds2
 write.table(mypreds1, file = "Competition1-5_submissions1.csv", row.names=F, col.names=c("Id","SalePrice"), sep=",")
 write.table(mypreds2, file = "Competition1-5_submissions2.csv", row.names=F, col.names=c("Id","SalePrice"), sep=",")
 
+#Try random forest
+RF<-ranger(SalePrice~.,data=train,write.forest=T)
+predsRF<-predict(RF,test)
+mypreds3<-data.frame(Id=test$Id,SalePrice=prediction$predictions)
+write.csv(result,"Competition1-5_submissions3.csv",row.names=F)
