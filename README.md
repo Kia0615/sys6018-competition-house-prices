@@ -9,4 +9,4 @@ JB Park: Responsible for data exploration
 Nitesh Prakash: Responsible partly for parametric model building and non-parametric model building
 
 # Files:
-The R code for the parametric model can be found in the master branch as "parametricmethod.R".
+The R code for the parametric model can be found in the master branch as "ParametricMethod.R".
