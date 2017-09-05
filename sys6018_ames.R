@@ -130,3 +130,9 @@ prices_test_knn$SalePrice <- prices_nonp$pred
 write.csv(prices_test_knn[,c("Id","SalePrice")], file = "ames_submissionsknn.csv", row.names=FALSE)
 # scored 0.22040
 # summary(prices_train_nonp_clean)
+
+#Try random forest
+RF<-ranger(SalePrice~.,data=train,write.forest=T)
+predsRF<-predict(RF,test)
+mypreds3<-data.frame(Id=test$Id,SalePrice=prediction$predictions)
+write.csv(result,"Competition1-5_submissions3.csv",row.names=F)
