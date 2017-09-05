@@ -10,3 +10,4 @@ Nitesh Prakash: Responsible partly for parametric model building and non-paramet
 
 # Files:
 The R code for the parametric model can be found in the master branch as "ParametricMethod.R".
+The R code for non parametric models can be found under "sys6018_ames.R".
